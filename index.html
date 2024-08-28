@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <link rel="stylesheet" href="resources\styles\main.css">
+    <script src="resources\scripts\index.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="createAccountForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-field" placeholder="Enter your email">
+                <div id="email-error" class="error-message">Please enter a valid email.</div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input-field" placeholder="Enter your password">
+                <div id="password-error" class="error-message">Password must be at least 6 characters long.</div>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm your password">
+                <div id="confirmPassword-error" class="error-message">Passwords must match.</div>
+            </div>
+            <button type="submit" id="submitBtn" disabled>Create Account</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
